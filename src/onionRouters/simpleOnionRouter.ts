@@ -47,6 +47,7 @@ export async function simpleOnionRouter(nodeId: number) {
     res.status(200).send({ "result": rawPrivateKey });
   });
 
+  
 
   const server = onionRouter.listen(BASE_ONION_ROUTER_PORT + nodeId, () => {
     console.log(
