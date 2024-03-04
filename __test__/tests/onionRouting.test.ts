@@ -432,8 +432,7 @@ describe("Onion Routing", () => {
     });
 
     it("Can export and import a public key - 0.25pt", async () => {
-      const { publicKey } = await generateRsaKeyPair();
-
+      const {publicKey} = await generateRsaKeyPair();
       const strPubKey = await exportPubKey(publicKey);
 
       const _publicKey = await importPubKey(strPubKey);
